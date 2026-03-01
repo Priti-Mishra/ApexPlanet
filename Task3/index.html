@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Advanced JavaScript Project</h1>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <h2>Image Carousel</h2>
+
+        <div class="carousel">
+            <img id="carouselImage" src="https://via.placeholder.com/600x300?text=Image+1">
+        </div>
+
+        <div class="buttons">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </section>
+
+    <!-- API Section -->
+    <section class="api-section">
+        <h2>Random Joke Generator (API)</h2>
+        <button onclick="getJoke()">Get Joke</button>
+        <p id="jokeText"></p>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>

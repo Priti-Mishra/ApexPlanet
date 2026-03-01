@@ -24,6 +24,8 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     formMessage.style.color = "green";
     formMessage.textContent = "Form submitted successfully!";
 });
+
+
 function addTask() {
     let taskInput = document.getElementById("taskInput");
     let taskText = taskInput.value.trim();

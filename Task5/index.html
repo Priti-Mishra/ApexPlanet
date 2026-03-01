@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Priti Kumari | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>Priti Kumari</h2>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <h1>About Me</h1>
+  <p>B.Tech CSE 3rd Year student passionate about Web Development and AI.</p>
+</section>
+
+<section class="section">
+  <h1>To-Do App</h1>
+  <input type="text" id="taskInput" placeholder="Add task">
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+</section>
+
+<section class="section">
+  <h1>Products</h1>
+
+  <select id="category" onchange="filterProducts()">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothing">Clothing</option>
+  </select>
+
+  <select onchange="sortProducts(this.value)">
+    <option value="default">Sort By</option>
+    <option value="price">Price Low-High</option>
+    <option value="rating">Rating High-Low</option>
+  </select>
+
+  <div id="productList" class="grid"></div>
+</section>
+
+</body>
+</html>
